@@ -12,6 +12,13 @@ Two model architectures are implemented and compared:
 
 ---
 
+## Architecture
+
+Read more about the architectural concepts behind this implementation:
+- [Time Series Isn’t Enough: How Graph Neural Networks Change Demand Forecasting](https://towardsdatascience.com/time-series-isnt-enough-how-graph-neural-networks-change-demand-forecasting/)
+- [From Connections to Meaning: Why Heterogeneous Graph Transformers (HGT) Change Demand Forecasting](https://towardsdatascience.com/from-connections-to-meaning-why-heterogeneous-graph-transformers-hgt-change-demand-forecasting/)
+
+---
 ## Project Structure
 
 ```
