@@ -1,0 +1,87 @@
+
+DEBUG: RAW MODEL OUTPUTS (LOG1P SPACE)
+Preds   | Mean: 3.4601, Min: 0.0000, Max: 9.2765
+Actuals | Mean: 3.0521, Min: 0.0000, Max: 9.6538
+
+DEBUG: REAL SALES (DENORMALIZED + BIAS CORRECTED)
+Preds   | Mean: 709.6696, Min: 0.0000, Max: 11999.2283
+Actuals | Mean: 701.3003, Min: 0.0000, Max: 15579.3335
+------------------------------------------------------------
+DEBUG WAPE (Model (Raw)): Sum Abs Diff: 588314.1073, Sum True: 1122080.5349
+DEBUG WAPE (Model (Log-Corrected)): Sum Abs Diff: 652018.3811, Sum True: 1122080.5349
+DEBUG BIAS (Model (Log-Corrected)): Mean Diff: 8.3692
+DEBUG WAPE (Baseline): Sum Abs Diff: 964157.9596, Sum True: 1122080.5349
+DEBUG BIAS (Baseline): Mean Diff: 0.0000
+
+============================================================
+EVALUATION RESULTS (Log1p Training)
+============================================================
+Metric               | ST-GNN Model    | Naïve Baseline 
+------------------------------------------------------------
+WAPE                 | 0.5811         | 0.8593
+Bias                 | 8.3692          | 0.0000
+============================================================
+
+============================================================
+EXPLAINABILITY ANALYSIS (HGT Only)
+============================================================
+
+AGGREGATED WEEKLY ANALYSIS: Top Volume SKU (SOS001L12P)
+Total Test Volume: 207768
+Averaging importance over Day 0 to Day 6 (First Week of Test Set).
+
+Period Volume (7 Days): Actual 30625 vs Predicted 28058
+----------------------------------------
+
+--- Average Drivers (Over 7 Days) ---
+1. Feature Importance:
+   - Rolling Mean (7d)   : 0.9205
+   - Sales               : 0.7722
+   - Factory Issue       : 0.7210
+   - Sales Lag (7d)      : 0.5990
+   - Delivery            : 0.4902
+   - Production          : 0.2646
+
+2. Temporal Importance:
+   - 1 Days Ago (t-1): 0.9615
+   - 2 Days Ago (t-2): 0.5198
+   - 3 Days Ago (t-3): 0.3178
+   - 4 Days Ago (t-4): 0.1309
+   - 5 Days Ago (t-5): 0.0733
+
+3. Key Neighbors (Structural):
+   - SOS005L04P (0.71) [shared_storage]
+   - SOS002L09P (0.51) [shared_subgroup]
+   - SOS008L02P (0.26) [shared_subgroup]
+   - POV001L24P (0.14) [shared_storage]
+   - SOS500M24P (0.06) [shared_subgroup]
+
+========================================
+AGGREGATED WEEKLY ANALYSIS: Top Volume SKU (SOS001L12P) - LAST WEEK
+Averaging importance over Last 7 Days of Test Set.
+
+Period Volume (Last 7 Days): Actual 31264 vs Predicted 37059
+----------------------------------------
+
+--- Average Drivers (Last 7 Days) ---
+1. Feature Importance:
+   - Rolling Mean (7d)   : 0.8910
+   - Sales               : 0.8092
+   - Sales Lag (7d)      : 0.6723
+   - Delivery            : 0.6096
+   - Factory Issue       : 0.4564
+   - Production          : 0.4134
+
+2. Temporal Importance:
+   - 1 Days Ago (t-1): 0.9185
+   - 2 Days Ago (t-2): 0.3575
+   - 14 Days Ago (t-14): 0.2212
+   - 3 Days Ago (t-3): 0.1787
+   - 13 Days Ago (t-13): 0.1610
+
+3. Key Neighbors (Structural):
+   - SOS002L09P (0.83) [shared_subgroup]
+   - SOS005L04P (0.33) [shared_subgroup]
+   - ATN01K24P (0.14) [shared_storage]
+   - POP001L12P (0.14) [shared_storage]
+   - SOS500M24P (0.08) [shared_subgroup]

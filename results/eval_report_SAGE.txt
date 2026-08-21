@@ -1,0 +1,28 @@
+
+DEBUG: RAW MODEL OUTPUTS (LOG1P SPACE)
+Preds   | Mean: 3.1289, Min: 0.0000, Max: 8.8586
+Actuals | Mean: 3.0521, Min: 0.0000, Max: 9.6538
+
+DEBUG: REAL SALES (DENORMALIZED + BIAS CORRECTED)
+Preds   | Mean: 756.1867, Min: 0.0000, Max: 10834.9306
+Actuals | Mean: 701.3003, Min: 0.0000, Max: 15579.3335
+------------------------------------------------------------
+DEBUG WAPE (Model (Raw)): Sum Abs Diff: 709749.7243, Sum True: 1122080.5349
+DEBUG WAPE (Model (Log-Corrected)): Sum Abs Diff: 701869.2762, Sum True: 1122080.5349
+DEBUG BIAS (Model (Log-Corrected)): Mean Diff: 54.8863
+DEBUG WAPE (Baseline): Sum Abs Diff: 964157.9596, Sum True: 1122080.5349
+DEBUG BIAS (Baseline): Mean Diff: 0.0000
+
+============================================================
+EVALUATION RESULTS (Log1p Training)
+============================================================
+Metric               | ST-GNN Model    | Naïve Baseline 
+------------------------------------------------------------
+WAPE                 | 0.6255         | 0.8593
+Bias                 | 54.8863          | 0.0000
+============================================================
+
+============================================================
+EXPLAINABILITY ANALYSIS (HGT Only)
+============================================================
+Explainability available for HGT models only.
