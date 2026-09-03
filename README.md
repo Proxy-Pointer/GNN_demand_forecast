@@ -256,6 +256,17 @@ The model expects the following directory layout under `dataset/Raw Dataset/`:
 
 ---
 
+## Author
+
+**Partha Sarkar**
+
+## Contact
+
+- **GitHub Issues**: For bug reports.
+- **General Questions**: For general questions, ideas, and enhancement requests, reach out to me on [LinkedIn](https://www.linkedin.com/in/partha-sarkar-lets-talk-ai) or [Email](mailto:partha.sarkarx@gmail.com).
+
+---
+
 ## License
 
-MIT
+© 2026 Partha Sarkar. Licensed under [MIT](./LICENSE).

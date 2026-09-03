@@ -37,3 +37,5 @@ Thumbs.db
 # Misc
 *.log
 profile_output.txt
+.env
+
